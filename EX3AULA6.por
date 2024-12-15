@@ -3,25 +3,24 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro nacionalidade, idade
-		logico permitido
+		cadeia cargo, departamento
+		inteiro idade
 
-		escreva("Qual sua nacionalidade (1) BRASILEIRA (2) ESTRANGEIRO : ")
-		leia(nacionalidade)
+		escreva("Digite seu cargo: ")
+		leia(cargo)
 
-		escreva("Qual sua idade: ")
+		escreva("Digite seu departamento: ")
+		leia(departamento)
+
+		escreva("Digite sua idade: ")
 		leia(idade)
 
-		se (nacionalidade == 1 e idade >= 16) {
-			permitido = verdadeiro
-		} senao {
-			permitido = falso	
+		se (cargo == "GERENTE" e departamento == "TIC") {
+			escreva("VOCÊ IRÁ RECEBER UM BONUS")
+			se (idade >= 60) {
+				escreva("\n", "IRÁ RECEBER BONUS PLUS")	
+			}
 		}
-
-		se (permitido == verdadeiro) {
-			escreva("Você pode votar!")
-		}
-		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 404; 
+ * @POSICAO-CURSOR = 336; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
