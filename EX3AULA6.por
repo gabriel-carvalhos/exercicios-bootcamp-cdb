@@ -12,13 +12,13 @@ programa
 		escreva("Digite seu departamento: ")
 		leia(departamento)
 
-		escreva("Digite sua idade: ")
-		leia(idade)
-
 		se (cargo == "GERENTE" e departamento == "TIC") {
-			escreva("VOCÊ IRÁ RECEBER UM BONUS")
-			se (idade >= 60) {
-				escreva("\n", "IRÁ RECEBER BONUS PLUS")	
+			escreva("Digite sua idade: ")
+			leia(idade)
+			se (idade > 60) {
+				escreva("VOCÊ IRÁ RECEBER UM BONUS")
+			} senao {
+				escreva("IRÁ RECEBER UM BONUS PLUS")
 			}
 		}
 	}
@@ -28,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 336; 
+ * @POSICAO-CURSOR = 407; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
