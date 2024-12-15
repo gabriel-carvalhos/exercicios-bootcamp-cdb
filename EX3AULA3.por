@@ -4,7 +4,7 @@ programa
 	funcao inicio()
 	{
 		cadeia nome
-		real nota = 0, media, atual
+		real nota, media = 0
 		inteiro contador
 
 		escreva("Digite seu nome: ")
@@ -12,13 +12,13 @@ programa
 
 		para (contador = 1; contador <= 4; contador++) {
 			escreva("Digite a nota ", contador, ": ")
-			leia(atual)
-			nota = nota + atual
+			leia(nota)
+			media =  media + nota
 		}
 		
 		limpa()
 
-		media = nota / 4
+		media = media / 4
 
 		escreva("Olá ", nome, ". Sua média foi ", media)
 	}
@@ -28,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 298; 
+ * @POSICAO-CURSOR = 274; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
