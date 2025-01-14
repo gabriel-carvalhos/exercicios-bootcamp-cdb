@@ -3,25 +3,20 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro var_Num[5] = {5,40,27,13,45}, i, soma = 0, maiores = 0
-		real media
+		real saldo, boletos[4]
+		inteiro i
+		escreva("Digite seu saldo: ")
+		leia(saldo)
 
-		para (i = 0; i < 5; i++) {
-			soma += var_Num[i]
+		para (i = 0; i < 4; i++) {
+			escreva("Digite o valor do boleto ", i + 1, " : ")
+			leia(boletos[i])
 		}
 
-		media = soma / 5
+		saldo -= (boletos[0] + boletos[1] + boletos[2] + boletos[3])
 
-		escreva("Media... ", media, "\n")
-
-		para (i = 0; i < 5; i++) {
-			se (media < var_Num[i]) {
-				escreva("Numero ", var_Num[i], " e maior que media \n")
-				maiores++
-			}
-		}
-
-		escreva("Total de elementos > que média ", maiores)
+		escreva("Após pagar os boletos, seu saldo será de ", saldo, " reais")
+		
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -29,7 +24,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 424; 
+ * @POSICAO-CURSOR = 292; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
