@@ -7,7 +7,6 @@ programa
 		inicializar()
 		processar()
 		finalizar()
-		
 	}
 
 	funcao inicializar()
@@ -43,40 +42,45 @@ programa
 		media()
 	}
 
-	funcao finalizar()
-	{
-		escreva("------- Fim do Programa ------- \n")
-		escreva("Total de operacoes... ", totoper)
-	}
-
 	funcao soma()
 	{
 		resultado = num1 + num2
+		totoper++
 		escreva("A soma = ", resultado, "\n")
 	}
 
 	funcao subtracao()
 	{
 		resultado = num1 - num2
+		totoper++
 		escreva("A subtração = ", resultado, "\n")
 	}
 
 	funcao divisao()
 	{
 		resultado = num1 / num2
+		totoper++
 		escreva("A divisão = ", resultado, "\n")
 	}
 
 	funcao multiplicacao()
 	{
 		resultado = num1 * num2
+		totoper++
 		escreva("A multiplicação = ", resultado, "\n")
 	}
 
 	funcao media()
 	{
 		resultado = (num1 + num2) / 2
+		totoper++
 		escreva("A média = ", resultado, "\n")
+	}
+
+	funcao finalizar()
+	{
+		escreva("------- Fim do Programa ------- \n")
+		escreva("Total de operacoes... ", totoper)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -84,7 +88,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 652; 
+ * @POSICAO-CURSOR = 1314; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
