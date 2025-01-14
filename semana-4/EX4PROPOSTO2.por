@@ -1,7 +1,7 @@
 programa
 {
 	inteiro var_Num[5] = {5,40,27,13,45}, i, maiores = 0
-	real media
+	real media = 0
 	
 	funcao inicio()
 	{
@@ -11,12 +11,11 @@ programa
 	}
 
 	funcao obter_Media() {
-		inteiro soma = 0
 		para (i = 0; i < 5; i++) {
-			soma += var_Num[i]
+			media += var_Num[i]
 		}
 
-		media = soma / 5
+		media = media / 5
 
 		escreva("Media... ", media, "\n")
 	}
@@ -40,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 76; 
+ * @POSICAO-CURSOR = 80; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
