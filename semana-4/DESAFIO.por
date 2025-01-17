@@ -29,9 +29,9 @@ programa
 	funcao obterQuantidade()
 	{
 		inteiro soma, quantidade_5 = 0
-		se (valor % 3 == 0) {
-			quantidade_3 = valor / 3
-		} senao {
+		// se (valor % 3 == 0) {
+		// 	quantidade_3 = valor / 3
+		// } senao {
 			
 			// atribui o numero mais proximo divisivel por 3
 			soma = valor - (valor % 3)
@@ -49,7 +49,7 @@ programa
 					quantidade_3--
 				}
 			}
-		}
+		// }
 
 		total = quantidade_3 + quantidade_5
 	}
@@ -85,7 +85,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1204; 
+ * @POSICAO-CURSOR = 825; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
