@@ -8,3 +8,4 @@ Exercícios feitos no Bootcamp da Código de Base
 - Semana 2: Operadores Aritméticos e Estruturas Condicionais
 - Semana 3: Estruturas de Repetição e Operadores Lógicos
 - Semana 4: Vetores, Matrizes e Funções
+- Semana 5: Arquivos
