@@ -1,17 +1,15 @@
 programa
-{ 	
+{
 	
 	funcao inicio()
 	{
-		inteiro contador = 1, soma = 0, n
+		inteiro a = 3, b = 7, c = 4
 
-		enquanto (contador <= 4) {
-			leia(n)
-			soma += n * n
-			contador++
-		}
-
-		escreva(soma)
+		escreva((a + c) > b)
+		escreva(b >= (a + 2))
+		escreva(c == (b - a))
+		escreva((b + a) <= c)
+		escreva((c + a) > b)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -19,7 +17,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 151; 
+ * @POSICAO-CURSOR = 185; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

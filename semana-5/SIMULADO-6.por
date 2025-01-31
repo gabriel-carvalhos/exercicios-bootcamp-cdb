@@ -10,10 +10,9 @@ programa
 
 		salbruto = salbase + gratif
 		escreva("bruto: ", salbruto)
-		escreva(15/100)
 
 		se (salbruto < 1000) {
-			ir = salbruto * (15/100)	
+			ir = salbruto * (15/100)
 		} senao {
 			ir = salbruto * (20/100)	
 		}
@@ -29,7 +28,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 99; 
+ * @POSICAO-CURSOR = 237; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
